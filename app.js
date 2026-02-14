@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, "public")));
    CONNECT TO MONGODB
 ====================== */
 
-mongoose.connect("mongodb://localhost:27017/")
+mongoose.connect("mongodb://localhost:2701x/")
   .then(() => console.log("MongoDB Connected ✅"))
   .catch(err => console.log(err));
 
@@ -67,3 +67,4 @@ app.post("/submit", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT} 🚀`);
 });
+
